@@ -11,7 +11,6 @@ function onDeviceReady() {
 	});
     
     getInitialCardsData();
-    alert("o esto??");
     // TODO: get all (where applicable) event handlers into the viewModels (hint: data-bind="click: handler")
    
 	$("#cardsView").on("touchend", ".deleteCardButton", function(e) {
@@ -180,8 +179,7 @@ var announcementData =[{"B_Id":"3","CERVESERA":"ADEGAS MENDUI\u00d1A","PROCEDENC
 ];*/
 
 function announcementListViewTemplatesInit() {
-    alert("Primero esto??");
-    $("#announcements-listview").kendoMobileListView({
+     $("#announcements-listview").kendoMobileListView({
             dataSource: kendo.data.DataSource.create({ data: announcementData }),
             template: $("#announcement-listview-template").html()
     });
