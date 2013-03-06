@@ -5,11 +5,11 @@ cachedLocations = [];
 
 // Apache Cordova is ready
 function onDeviceReady() {
-	// Prevent screen bounce
+	alert("random");
+    // Prevent screen bounce
         $("#addCardView").on("touchend", "#buttonAddNewCardView", function() {
 		addNewCard();
 	});
-    
     getInitialCardsData();
     // TODO: get all (where applicable) event handlers into the viewModels (hint: data-bind="click: handler")
    
